@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;lib&apos;&#x0D;&#x0A;- Original project: &apos;TimeServerProject&apos;&#x0D;&#x0A;- Destination element: &apos;lib&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     mina-core-2.0.0-m1.jar&#x0D;&#x0A;     slf4j-api-1.7.25.jar&#x0D;&#x0A;     slf4j-jdk14-1.7.25.jar" description="Copy files" element1="lib/mina-core-2.0.0-m1.jar" element2="lib/slf4j-api-1.7.25.jar" element3="lib/slf4j-jdk14-1.7.25.jar" files="3" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1512301400080" target="/Mina/lib" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,115 @@
+import java.util.Scanner;
+
+public class BianMa {
+	public static void main(String[]args ) {
+		System.out.println("请输入您的密文:");
+		Scanner scanner=new Scanner(System.in);
+		String ss=scanner.nextLine();
+		char test []=ss.toCharArray();
+		System.out.println("解密后的凯撒密码为:");
+		for(int i=0;i<test.length;i++) {			
+				if (test[i]=='A') {
+					System.out.print('d');					
+				}
+				if (test[i]=='B') {
+					System.out.print('l');
+				}
+				if(test[i]=='C') {
+					System.out.print('r');
+				}
+				if(test[i]=='D') {
+					System.out.print('y');
+					
+				}
+				if(test[i]=='E') {
+					System.out.print('v');
+					
+				}
+				if(test[i]=='F') {
+					System.out.print('o');
+					
+				}
+				if(test[i]=='G') {
+					System.out.print('h');
+					
+				}
+				if(test[i]=='H') {
+					System.out.print('e');
+					
+				}
+				if(test[i]=='I') {
+					System.out.print('z');
+					
+				}
+				if(test[i]=='J') {
+					System.out.print('x');
+					
+				}
+				if(test[i]=='K') {
+					System.out.print('w');
+					
+				}
+				if(test[i]=='L') {
+					System.out.print('p');
+					
+				}
+				if(test[i]=='M') {
+					System.out.print('t');
+					
+				}
+				if(test[i]=='N') {
+					System.out.print('b');
+					
+				}
+				if(test[i]=='O') {
+					System.out.print('g');
+					
+				}
+				if(test[i]=='P') {
+					System.out.print('f');
+					
+				}
+				if(test[i]=='Q') {
+					System.out.print('j');
+					
+				}
+				if(test[i]=='R') {
+					System.out.print('q');
+					
+				}
+				if(test[i]=='S') {
+					System.out.print('n');
+					
+				}
+				if(test[i]=='T') {
+					System.out.print('m');
+					
+				}
+				if(test[i]=='U') {
+					System.out.print('u');
+					
+				}
+				
+				if(test[i]=='V') {
+					System.out.print('s');
+									
+				}
+				if(test[i]=='W') {
+					System.out.print('k');
+					
+				}if(test[i]=='X') {
+					System.out.print('a');
+					
+				}
+				if(test[i]=='Y') {
+					System.out.print('c');
+					
+				}
+				if(test[i]=='Z') {
+					System.out.print('i');
+					
+				}			
+			}		
+		}	
+	}
+

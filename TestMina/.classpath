@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="E:/QQ文件/1461154748/FileRecv/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="E:/QQ文件/1461154748/FileRecv/mina-core-2.0.7.jar"/>
+	<classpathentry kind="lib" path="E:/QQ文件/1461154748/FileRecv/mina-example-2.0.7.jar"/>
+	<classpathentry kind="lib" path="E:/QQ文件/1461154748/FileRecv/mina-example-2.0.7-sources.jar"/>
+	<classpathentry kind="lib" path="E:/QQ文件/1461154748/FileRecv/slf4j-api-1.6.6.jar"/>
+	<classpathentry kind="lib" path="E:/QQ文件/1461154748/FileRecv/slf4j-api-1.6.6-sources.jar"/>
+	<classpathentry kind="lib" path="E:/QQ文件/1461154748/FileRecv/slf4j-log4j12-1.6.6.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+  
+var webSocket=new WebSocket('ws://localhost:8080/JavaWeb/websocket');
+ webSocket.onerror = function(event) {
+     onError(event)
+   };
+  
+   webSocket.onopen = function(event) {
+     onOpen(event)
+   };
+   webSocket.onmessage = function(event) {
+     onMessage(event)
+   };
+  
+   function onMessage(event) {
+     
+     document.getElementById('messages').innerHTML
+       += '\n' + event.data;
+   }
+  
+   function onOpen(event) {
+     document.getElementById('messages').innerHTML
+       = 'Connection established';
+   }
+  
+   function onError(event) {
+     alert(event.data);
+   }
+        function start() {
+          var content= document.getElementById('UserMessage').value;
+          //webSocket.send('hello');
+          webSocket.send(content);
+          return false;
+        }
+        /*
+        window.onclose()方法不管用，采用曲线救国的方法，
+                 使用body标签的onbeforeunload事件，当整个页面刷新或把浏览器页面关闭的时候，通知后台断开websocket连接
+         
+        */
+        function fnUnloadHandler(){
+        webSocket.close();
+        } 
+</script>
+</head>
+<body  onbeforeunload="fnUnloadHandler()">
+  <div>
+    <input id="UserMessage" type="text">
+    <input type="submit" onclick="start()" />
+  </div>
+  <textarea id="messages" rows="10" cols="20"></textarea>
+</body>
+</html>

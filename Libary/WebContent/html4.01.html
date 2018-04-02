@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>图书管理系统</title>
+<style>
+body{
+	background:#72E9E21A;height:750px;	
+}
+#menu{
+ padding:20px 20px 0 0;font-size: 19px;background:#4FF5EC4D;height:40px;margin:-11px;
+}
+#menu ul{
+float:right;list-style:none;margin:0px;
+}
+#menu ul li{
+float:left; margin:0px 32px;display:block;line-height:28px;
+}
+#menuDiv{
+width:1px;height:28px;background:#999;
+}
+#banner{
+	float:left ;
+	margin: 110px 0px 0px -126px;
+}	
+#bn{
+	float:left ;
+	margin: 56px 0px 0px 120px;
+}	
+#bm{
+	float:left ;
+	margin: 47px 0px 0px -1px;
+}
+#bv{
+	float:left ;
+	margin: 178px 0px 0px -42px;
+}
+#mb{
+	float:left ;
+	margin: 231px 0px 0px 23px;
+}
+</style>
+</head>
+
+<body>
+<div id="container">
+    <div id="menu">
+        <ul>
+           <li>读者信息处理</li>
+           <li class="menuDiv"></li>
+           <li>图书信息处理</li>
+           <li class="menuDiv"></li>
+           <li>借书还书操作</li>
+           <li class="menuDiv"></li>
+           <li>相关信息搜索</li>
+           <li class="menuDiv"></li>
+           <li>比例统计信息</li>
+        </ul>
+    </div>
+    <!--下拉表-->
+    
+    	<div id="bn">
+    	添加图书的条件：
+    	</div>
+    	<div id="banner">
+      <form>  	
+      	  <select>
+      	  	<option selected>书名</option>
+      	  	<option>类型</option>
+      	  	<option>作者</option>
+      	  </select>
+      	  <input type="text">
+      	  <button type="">添加</button>
+      	  <button type="">搜索</button>
+      </form>
+       <div id="bm">
+    	条件：
+    	</div>
+    	<div id="bv">
+    	结果：
+    	</div>
+    	<div id="mb">
+	    	<table border="1" width="1000px" height="auto">
+		         <!——设置表格的行-->
+		         <tr>
+		         <!——设置表格的列-->
+		         <th>书号 </th><th>书名</th><th>作者</th><th>书籍类别名称</th><th>出版社</th><th>出版日期</th><th>是否被借出</th>
+		         </tr>
+		         <tr>
+		         <td>b008</td><td>小朋友</td><td>姐姐</td><td>生活</td><td>央视</td><td>2008-09-01 00</td><td>Y</td>
+		         </tr>
+		         <tr height="150px">
+		         
+		         </tr>
+		         
+			</table>
+       </div>
+    </div>
+</div>   
+</body>
+</html>
